@@ -1,0 +1,13 @@
+<div>
+    <h1>Lista filmów</h1>
+    <ul>
+        <?php if (empty($movies)): ?>
+        <p>Nie znaleziono filmów</p>
+        <?php else: ?>
+        <?php foreach ($movies as $movie): ?>
+        <li><?= $movie ?></li>
+        <?php endforeach; ?>
+        <?php endif; ?>
+    </ul>
+</div>
+
